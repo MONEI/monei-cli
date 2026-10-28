@@ -1,0 +1,43 @@
+{
+  "name": "@monei-js/cli",
+  "version": "0.0.1",
+  "description": "MONEI from the terminal, for developers and AI agents",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "monei": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MONEI/monei-cli"
+  },
+  "keywords": [
+    "monei",
+    "payments",
+    "cli",
+    "bizum",
+    "agents",
+    "mcp"
+  ]
+}
